@@ -14,7 +14,7 @@ app.use(cors())
 
 
 app.use("/",  (req, res) => {
-    res.send("Welcome To Home Page")
+    res.send({msg:"Welcome To Home Page"})
 })
 
 
