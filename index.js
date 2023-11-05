@@ -4,6 +4,7 @@ const express = require("express")
 require("dotenv").config()
 const {connection} = require("./db")
 const {userRouter} = require("./routes/user.routes")
+const {menuRouter} = require("./routes/menu.routes")
 const cors = require("cors")
 
 const app = express()
@@ -14,7 +15,7 @@ app.use(cors())
 
 
 
-
+app.use("/menu", menuRouter)
 app.use("/users", userRouter)
 
 

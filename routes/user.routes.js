@@ -35,8 +35,6 @@ userRouter.post("/register", async (req, res) => {
 
 
 
-
-
 // login
 
 
@@ -87,10 +85,6 @@ userRouter.post("/logout", async (req, res) => {
         res.status(400).json({ error: error.message })
     }
 })
-
-
-
-
 
 
 
